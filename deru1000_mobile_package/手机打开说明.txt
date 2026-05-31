@@ -1,0 +1,10 @@
+手机打开方法：
+1. 先解压这个 zip。
+2. 打开 index.html。
+3. iPhone：建议在“文件”App 中解压后，长按 index.html → 分享 → 用 Safari/Chrome 打开。
+4. Android：解压后用 Chrome 打开 index.html。
+5. 如果要播放音频，请把 Deru1000_001.mp3、Deru1000_002.mp3 等音频文件和 index.html 放在同一个文件夹。
+
+注意：
+- 只下载 HTML 时可以看文字，但没有同名 MP3 文件就不能播放音频。
+- 微信/QQ/部分 App 内置浏览器可能会禁止本地 HTML 运行，建议用 Safari 或 Chrome。
