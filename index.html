@@ -1594,4 +1594,236 @@
     }
   </script>
 </body>
+  <style id="abibi-compact-style">
+  body {
+    font-size: 14px;
+  }
+
+  .app {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  .sidebar {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .meta,
+  .import-help {
+    display: none;
+  }
+
+  .search,
+  .range-select,
+  .btn {
+    padding: 8px 9px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 20px clamp(12px, 3vw, 28px) 100px;
+  }
+
+  .reader-head,
+  .chapter-grid,
+  .now,
+  .bar-controls {
+    max-width: 760px;
+  }
+
+  .reader-head h2 {
+    font-size: clamp(20px, 3vw, 30px);
+  }
+
+  .reader-head p {
+    font-size: 13px;
+  }
+
+  .chapter {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .chapter-title {
+    font-size: 18px;
+  }
+
+  .study-body {
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .study-line,
+  .key-line {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 7px;
+    font-size: 16px;
+    line-height: 1.38;
+  }
+
+  .phrase-title {
+    font-size: 16px;
+  }
+
+  .phrase-chip {
+    font-size: 15px;
+    padding: 9px 10px;
+    border-radius: 10px;
+  }
+
+  .player-bar {
+    left: 260px;
+    padding: 8px clamp(12px, 3vw, 28px);
+  }
+
+  @media (max-width: 860px) {
+    .app {
+      display: block;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      max-height: 42vh;
+      overflow: auto;
+      padding: 10px;
+    }
+
+    .brand {
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+
+    .counter {
+      font-size: 13px;
+      min-width: auto;
+    }
+
+    .controls {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .search {
+      grid-column: 1 / -1;
+      height: 38px;
+    }
+
+    .actions {
+      grid-column: 1 / -1;
+    }
+
+    .import-tools {
+      display: none;
+    }
+
+    .range-list {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      overflow-x: auto;
+    }
+
+    .range-link {
+      min-width: 78px;
+      padding: 6px 7px;
+      font-size: 12px;
+    }
+
+    main {
+      padding: 12px 8px 112px;
+    }
+
+    .reader-head {
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .reader-head h2 {
+      font-size: 20px;
+    }
+
+    .reader-head p {
+      display: none;
+    }
+
+    .chapter-grid {
+      gap: 7px;
+    }
+
+    .chapter {
+      padding: 9px;
+      border-radius: 12px;
+    }
+
+    .chapter-title {
+      font-size: 15px;
+    }
+
+    .study-line,
+    .key-line {
+      grid-template-columns: 36px minmax(0, 1fr);
+      gap: 6px;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .study-label,
+    .key-label {
+      font-size: 12px;
+    }
+
+    .phrase-title {
+      font-size: 14px;
+    }
+
+    .phrase-chip {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .player-bar {
+      left: 0;
+      padding: 7px 8px calc(7px + env(safe-area-inset-bottom));
+    }
+
+    .now {
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+    .bar-controls {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .progress {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
+  }
+</style>
+
+<script>
+  document.title = "阿比比 的英语角落";
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const h1 = document.querySelector("h1");
+    if (h1) h1.textContent = "阿比比 的英语角落";
+
+    const h2 = document.querySelector(".reader-head h2");
+    if (h2) h2.textContent = "英语词汇听读";
+
+    const meta = document.querySelector(".meta");
+    if (meta) meta.textContent = "English Listening / Vocabulary / Chinese";
+  });
+</script>
 </html>
